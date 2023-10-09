@@ -24,6 +24,20 @@ CUDA-Financial-Modeling/
 
 ## Visualization Setup
 
+This project now includes visualization capabilities for the financial models using OpenGL in conjunction with CUDA.
+
+1. Ensure you have the OpenGL Utility Toolkit (GLUT) installed. This is used for the visualization.
+2. Compile the CUDA code with both nvcc and a C++ compiler. For example: `nvcc -o output_name filename.cu -lglut -lGL -lGLU`
+3. Run the compiled binary to see the visualization of the Black-Scholes model results.
+
+The visualization currently shows a simple sine wave as placeholder data. To integrate real financial data and visualize it:
+
+1. Modify the `blackScholesKernel` to compute the desired financial model.
+2. Retrieve the results from the GPU after computation.
+3. Update the `displayFunction` to visualize this data using OpenGL calls.
+
+This setup involves the combination of CUDA with OpenGL for visualization. Before using the visualization aspect, ensure that you have the OpenGL and GLUT libraries installed on your system.
+
 1.Ensure you have the OpenGL Utility Toolkit (GLUT) installed. This is used for the visualization.
 2. Compile the CUDA code with both nvcc and a C++ compiler. For example:
 

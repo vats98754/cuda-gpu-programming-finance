@@ -1,7 +1,8 @@
-
 # CUDA-based Financial Modeling Project Structure
 
 This repository contains the GPU-accelerated financial models using CUDA. The directory structure organizes the source files, headers, binaries, and data.
+
+This project includes visualization capabilities for the financial models using OpenGL in conjunction with CUDA.
 
 ## Directory Structure
 
@@ -20,6 +21,11 @@ CUDA-Financial-Modeling/
 │
 └── data/                      # Data files (e.g., market data for calibration)
 ```
+
+## Visualization Setup
+
+1.Ensure you have the OpenGL Utility Toolkit (GLUT) installed. This is used for the visualization.
+2. Compile the CUDA code with both nvcc and a C++ compiler. For example:
 
 ## Compilation
 

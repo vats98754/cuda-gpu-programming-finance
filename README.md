@@ -38,9 +38,6 @@ The visualization currently shows a simple sine wave as placeholder data. To int
 
 This setup involves the combination of CUDA with OpenGL for visualization. Before using the visualization aspect, ensure that you have the OpenGL and GLUT libraries installed on your system.
 
-1.Ensure you have the OpenGL Utility Toolkit (GLUT) installed. This is used for the visualization.
-2. Compile the CUDA code with both nvcc and a C++ compiler. For example:
-
 ## Compilation
 
 To compile the CUDA code files, navigate to the `src` directory and use the `nvcc` compiler:
